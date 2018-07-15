@@ -1,0 +1,3 @@
+Build the docker image as part of the maven build process:
+-----------------------------------------------------------
+mvn clean package docker:build
