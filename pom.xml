@@ -65,10 +65,8 @@
 				<version>0.20.0</version>
 
 				<configuration>
-
                     <!--<dockerHost>http://127.0.0.1:2375</dockerHost>-->
                     <dockerHost>unix:///var/run/docker.sock</dockerHost>
-
                     <verbose>true</verbose>
 					<images>
 						<image>
@@ -85,6 +83,9 @@
 									<tag>${project.version}</tag>
 								</tags>
 							</build>
+							<run>
+								<ports>8080:8080</ports>
+							</run>
 						</image>
 					</images>
 				</configuration>

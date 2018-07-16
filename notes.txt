@@ -1,3 +1,7 @@
 Build the docker image as part of the maven build process:
 -----------------------------------------------------------
 mvn clean package docker:build
+
+mvn docker:run
+mvn docker:start (run in background, like a -d flag)
+mvn docker:stop
